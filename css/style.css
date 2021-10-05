@@ -91,6 +91,7 @@ main #top a:hover {
     /* playlists  */
  .container {
      padding-left: 10px;
+     margin: 30px 0;
  }
 
  .container h1 {
@@ -102,6 +103,7 @@ main #top a:hover {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin-top: 20px;
  }
 
  .container .album_container .album {
@@ -150,13 +152,16 @@ main #top a:hover {
      min-height: 150px;
  }
 
+ .container .playlist_img .circle {
+     border-radius: 50%;
+ }
 
  .container .album_container h3 {
      margin: 10px 0;
      color: white;
  }
 
- .container .album_container .album span {
+ .container span {
      color: rgba(116,118,123,255);
  }
 

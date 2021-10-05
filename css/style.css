@@ -104,11 +104,40 @@ main #top a:hover {
     flex-wrap: wrap;
  }
 
-.container .album_container .album {
-    width: calc(100% /6 - 35px);
-    margin-right: 35px;
-    text-align: center;
-}
+ .container .album_container .album {
+     width: calc(100% /6 - 35px);
+     margin-right: 35px;
+     text-align: center;
+    }
+    
+ /* lg version  */
+ @media all and (min-width: 1201px) {
+
+    .container .album_container .album {
+        width: calc(100% /6 - 35px);
+    }
+
+  }
+
+
+  /* md version  */
+  @media all and (min-width: 1025px) and (max-width: 1200px) {
+
+    .container .album_container .album {
+        width: calc(100% /4 - 35px);
+    }
+
+  }
+
+  /* s version  */
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+
+    .container .album_container .album {
+        width: calc(100% /2 - 35px);
+    }
+
+  }
+
 
  .container .album_container .playlist_img {
      width: 100%;

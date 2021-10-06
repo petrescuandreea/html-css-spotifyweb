@@ -29,8 +29,43 @@ aside {
     width: 200px;
     height: 100%;
     background-color: rgba(0,0,0,255);
+    color: rgba(90,90,90,255);
 }
 
+aside #logo img {
+    width: 150px;
+    padding: 10px;
+}
+
+    /* playlist  */
+aside #playlist .fas {
+    font-size: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    color: rgba(90,90,90,255);
+    margin: 0;
+}
+
+aside #playlist span {
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+aside #playlist nav ul {
+    list-style-type: none;
+}
+
+aside #playlist nav ul li {
+    margin: 10px 0;
+}
+
+aside #playlist nav ul li a {
+    color: rgba(90,90,90,255);
+}
+
+aside #playlist nav ul li a:hover {
+    color: white;
+}
 
 /* main part  */
 main {
@@ -191,8 +226,6 @@ main #top a:hover {
  .container .playlist_img img {
      width: 100%;
      height: 100%;
-     min-width: 100px;
-     min-height: 100px;
  }
 
  .container .playlist_img .circle {

@@ -220,18 +220,11 @@ footer {
 }
 
     /* left part   */
-footer #left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 footer #left #playing_song {
     display: flex;
     align-items: center;
     margin-right: 30px;
 }
-
 
 footer #left #song_img img{
     width: 50px;
@@ -264,55 +257,68 @@ footer #left .icon .far:hover {
 
 
 
-    /* center part  */
-#center {
+/* center part  */
+footer #center {
+    width: 50%;
     color: white;
 }
 
-    /* first block  */
-#center #up {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#center #up .fas , #center #up .far {
-    margin: 0 10px;
-    font-size: 15px;
-}
-
-#center #up .far.zoom {
+/* first block  */
+footer #center #up .far.zoom {
     font-size: 25px;
     margin:0 30px;
     transition: all;
 }
 
-#center #up .far.zoom:hover {
+footer #center #up .far.zoom:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
-    /* second block  */
-#down {
+/* second block  */
+footer #center #down {
     width: 100%;
     height: 20px;
     margin: 5px 0;
+}
+
+footer #center #down .grey {
+    width: 100%;
+}
+
+footer #center #down .grey .light_grey {
+    width: 20%;
+}
+
+/* right part  */
+footer #right .grey {
+    width: 150px;
+}
+
+footer #right .grey .light_grey {
+    width: 40px;
+}
+
+
+    /* footer general rules  */
+#left , #right , #center #up , #center #down{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#down .grey {
-    width: 500px;
-    min-width: 100px;
+footer .grey {
     height: 5px;
     background-color: rgba(83,83,83,255);
     border-radius: 5px;
     margin: 0 15px;
 }
 
-#down .grey .light_grey {
-    width: 20%;
+footer .grey:hover {
+    cursor: pointer;
+}
+
+footer .light_grey {
     border-radius: 5px;
     height: 5px;
     background-color: rgba(173,173,173,255);
@@ -320,40 +326,23 @@ footer #left .icon .far:hover {
     transition: all;
 }
 
-#down .grey:hover {
-    cursor: pointer;
-}
-
-#down .grey:hover .light_grey {
+footer .grey:hover .light_grey {
     background-color: yellowgreen;
 }
 
-#down .grey .light_grey .fas.white {
+.fas , .far {
+   margin: 0 10px;
+   font-size: 15px;
+   color: white;
+}
+
+footer .grey .light_grey .fas.white {
     position: absolute;
-    right:0;
+    right: -10px;
     top: -5px;
     display: none;
 }
 
-#down .grey:hover .fas.white {
+footer .grey:hover .fas.white {
     display: block;
-}
-
-
-    
-
-    /* right part  */
-#right {
-    width: 200px;
-    height: 60px;
-    background-color: rgb(187, 114, 175);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#right div {
-    width: 40px;
-    height: 30px;
-    background-color: coral;
 }

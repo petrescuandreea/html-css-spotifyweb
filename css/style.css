@@ -36,6 +36,7 @@ aside {
     background-color: rgba(0,0,0,255);
     color: rgba(90,90,90,255);
     font-size: 14px;
+    position: relative;
 }
 
 
@@ -105,6 +106,51 @@ aside #playlist nav ul li a {
 aside #playlist nav ul li a:hover {
     color: white;
 }
+
+
+aside #down_block {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+aside #down_block #download {
+    border-bottom: 1px solid white;
+}
+
+aside #down_block #download_img {
+    width: 20px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+aside #down_block span {
+    line-height: 40px;
+    vertical-align: middle;
+    margin-left: 8px;  
+}
+
+aside #down_block #user {
+    margin: 15px 0 5px 0;
+}
+
+aside #down_block #user #user_avatar {
+    width: 30px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 50%;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+aside #down_block #user span {
+    line-height: 50px;
+    vertical-align: middle;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 /* main part  */
 main {

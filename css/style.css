@@ -588,3 +588,18 @@ footer .grey .light_grey .fas.white {
     display: none;
 }
 
+footer .grey:hover .fas.white {
+    display: block;
+}
+
+/* responsive version  */
+  /* xs version  */
+  @media all and (max-width: 552px) {
+
+    footer .grey .light_grey .fas.white {
+        right: -5px;
+        top: -4px;
+        font-size: 12px;
+    }
+
+}

@@ -72,6 +72,10 @@ aside #logo #hidden {
     border-left: 5px solid lawngreen;
 }
 
+#actions a.border_left span {
+    color: white;
+}
+
 #actions a img {
     width: 25px;
     line-height: 25px;
@@ -177,16 +181,20 @@ main {
 
 /* top  */
 main #top {
-    height: 60px;
+    width: calc(100% - 200px);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    text-align: right;
     background-color:rgba(0,0,0,0.45);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 15px;
-    position: relative;
+    padding: 25px;
 }
 
+
 main #top a {
+    font-size: 12px;
     color:white;
     border: 2px solid white;
     border-radius: 15px;
@@ -195,7 +203,8 @@ main #top a {
 }
 
 main #top a:hover {
-    font-size: 20px;
+    transform: scale(1.2);
+    border-radius: 20px; 
 }
 
 
@@ -206,11 +215,28 @@ main #top a:hover {
 }
 
 /*nav menu  */
+main nav {
+    margin-top: 80px;
+}
+
 main nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+nav ul .underline {
+    position: relative;
+}
+
+main nav ul li .line {
+    width: 35px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: chartreuse;
+    position: absolute;
+    left: 35%
 }
 
 main nav ul li {
@@ -298,10 +324,13 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 .container .album_container h3 {
+    font-size: 15px;
     padding-top: 10px;
 }
 
 .container span {
+    font-size: 12px;
+    font-weight: bold;
     color: rgba(116,118,123,255);
 }
 
@@ -347,7 +376,7 @@ background-color: rgba(0, 0, 0, 0.5);
     }
 
     /* aside  */
-    aside #logo #show , aside #actions span , aside #playlist , aside #down_block span {
+    aside #logo #show , aside #actions span , aside #playlist , aside #down_block a , aside #down_block span {
         display: none;
     }
 
@@ -398,6 +427,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 5px;
+    position: relative;
 }
 
     /* left part   */

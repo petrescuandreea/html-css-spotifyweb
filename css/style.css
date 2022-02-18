@@ -375,6 +375,10 @@ background-color: rgba(0, 0, 0, 0.5);
         width: calc(100% - 50px);
     }
 
+    main #top {
+        width: calc(100% - 50px);
+    }
+
     /* aside  */
     aside #logo #show , aside #actions span , aside #playlist , aside #down_block a , aside #down_block span {
         display: none;
